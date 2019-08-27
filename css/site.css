@@ -1,0 +1,274 @@
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    /* Set the fixed height of the footer here */
+    height: 30px;
+    line-height: 30px; /* Vertically center the text there */
+}
+
+
+.content {
+    color: black;
+    font-family: 'Inconsolata', monospace; /*'Spectral', serif;*/
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+.heading2 {
+    color: #0CA5B0;
+    font-family: 'Arvo', serif; /*'Rouge Script', cursive;-------------------#0CA5B0---------------*/
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 48px;
+    text-align: center;
+}
+
+.uLine {
+    color: orange;
+    height: 7px;
+    border-radius: 30px;
+    width: 100%;
+}
+
+.navLi{
+    padding: 5px 5px 5px 5px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 0px;
+}
+
+    nav ul {
+        line-height: 0px;
+        list-style: none;
+        background: rgba(0, 0, 0, 0);
+        overflow: hidden;
+        color: #fff;
+        padding: 0;
+        text-align: right;
+        margin: 0;
+        padding-right: 40px;
+        transition: 1s;
+    }
+
+    nav.black ul {
+        background-color: white;
+        color: darkorange;
+    }
+
+    nav ul li {
+        display: inline-block;
+        padding: 20px 10px;
+    }
+    nav ul li:hover {
+        background-color: whitesmoke;
+    }
+
+        nav ul li a {
+            text-decoration: none;
+            color: darkorange;
+            font-family: 'Inconsolata', monospace;
+            font-weight:bold;
+           font-size: 20px;
+        }
+
+.menu-icon {
+    line-height: 30px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+@media(max-width: 786px) {
+
+    nav ul {
+        max-height: 0px;
+        background: #000;
+    }
+
+    nav.black ul {
+        background: #000;
+    }
+
+    .showing {
+        max-height: 34em;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+
+.heading3 {
+    color: #0CA5B0;
+    font-family: 'Arvo', serif; /*'Rouge Script', cursive;-------------------#0CA5B0---------------*/
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 48px;
+    text-align: center;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+
+@keyframes example {
+    0% {
+        width:0%;
+    }
+
+    25% {
+        width:25%;
+    }
+
+    50% {
+        width: 50%;
+    }
+
+    75% {
+        width:75%;
+    }
+
+    100% {
+        width: 100%
+        
+    }
+}
+
+.topMargin{
+    padding-top: 50px;
+}
+#main-display {
+    margin: 200px auto;
+}
+
+.fab {
+    border: none;
+    background-color: #e74c3c;
+    border-radius: 100%;
+    padding: 25px;
+    position: absolute;
+    left: 80%;
+    top: 80%;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 1px grey;
+    box-sizing: border-box;
+    width: 0;
+    height: 0;
+}
+
+    .fab .fa {
+        transform: translate(-50%, -50%);
+    }
+
+    .fab.is-expanding {
+        animation: expand 0.5s ease-in;
+    }
+
+    .fab.expanded {
+        width: 80%;
+        height: 60%;
+        border-radius: 3px;
+        background-color: #3498db;
+        left: 10%;
+        top: 20%;
+        cursor: auto;
+    }
+
+    .fab.is-closing {
+        animation: expand 0.5s ease-out reverse;
+    }
+
+@keyframes expand {
+    33% {
+        width: 0;
+        height: 0;
+        left: 70%;
+        top: 70%;
+    }
+
+    100% {
+        width: 80%;
+        height: 60%;
+        border-radius: 3px;
+        background-color: #3498db;
+        left: 10%;
+        top: 20%;
+    }
+}
+
+.expand-close {
+    cursor: pointer;
+    float: right;
+}
+
